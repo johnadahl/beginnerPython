@@ -3,9 +3,9 @@
 
 #I need to get a string and shift it. I'm going for a brute force method here.
 print('Please Input your phrase to be translated.')
-translatethis = str(input())
+plaintext = str(input())
 print('Please input your shift amount.')
-boyo = int(input())
+shift = int(input())
 def caesar(plaintext, shift):
     #We need to take the text as an argument,
     #and the letter shift as anothe argument.
@@ -19,4 +19,4 @@ def caesar(plaintext, shift):
 
     return plaintext.translate(table)
     print(plaintext.translate(table))
-caesar(translatethis, boyo)
+caesar(plaintext, shift)
