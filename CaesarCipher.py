@@ -5,6 +5,9 @@ import string
 #I need to get a string and shift it. I'm going for a brute force method here.
 print('Please Input your phrase to be translated.')
 plaintext = str(input())
+plaintext = plaintext.lower()
+#The lower recieves an arguemtn in the () for what letters should become
+#lower. With an empty () meaning all letters.
 print('Please input your shift amount.')
 shift = int(input())
 def caesar(plaintext, shift):
