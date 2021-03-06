@@ -9,7 +9,7 @@ plaintext = plaintext.lower()
 #The lower recieves an arguemtn in the () for what letters should become
 #lower. With an empty () meaning all letters.
 print('Please input your shift amount.')
-shift = int(input())
+#shift = int(input())
 def caesar(plaintext, shift):
     #We need to take the text as an argument,
     #and the letter shift as anothe argument.
@@ -24,4 +24,7 @@ def caesar(plaintext, shift):
     print(plaintext.translate(table))
 
     return plaintext.translate(table)
-caesar(plaintext, shift)
+#caesar(plaintext, shift)
+
+for i in range(1,26):
+    caesar(plaintext, i)
