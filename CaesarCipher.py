@@ -25,6 +25,19 @@ def caesar(plaintext, shift):
 
 #    print(plaintext.translate(table))
 
+#so end is not a thing I can do I think,
+#And plainlist is not callable.
+    plainlist = plaintext.split(' ')
+    for boy in plainlist:
+        if boy in commonwords:
+            codes.append(plaintext.translate(table))
+            return
+        else:
+            return
+            #This still isn't working, but I'm not getting typer errors.
+            #Too bad my wrists are killing me slowly.
+            #I need to talk to a physical therapist and probably
+            #stop programming and get a verticle mouse.
 
     codes.append(plaintext.translate(table))
     return plaintext.translate(table)
