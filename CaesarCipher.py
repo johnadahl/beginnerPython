@@ -27,25 +27,35 @@ def caesar(plaintext, shift):
 
 #so end is not a thing I can do I think,
 #And plainlist is not callable.
+
+
+
     plainlist = plaintext.split(' ')
-    for boy in plainlist:
-        if boy in commonwords:
-            codes.append(plaintext.translate(table))
-            return
-        else:
-            return
+    check = any(item in commonwords for item in plainlist)
+
+    if check is True:
+        codes.append(plaintext.translate(table))
+    else:
+        return
+
+#    for boy in plainlist:
+#        if boy in commonwords:
+#            codes.append(plaintext.translate(table))
+#            return
+#        else:
+#            return
             #This still isn't working, but I'm not getting typer errors.
             #Too bad my wrists are killing me slowly.
             #I need to talk to a physical therapist and probably
             #stop programming and get a verticle mouse.
 
-    codes.append(plaintext.translate(table))
+#    codes.append(plaintext.translate(table))
     return plaintext.translate(table)
 
 #caesar(plaintext, shift)
 print('below are the possible cyphers.')
 print()
-for i in range(1,26):
+for i in range(0,26):
     caesar(plaintext, i)
 
 for x in codes:
