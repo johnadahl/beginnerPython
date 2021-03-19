@@ -4,13 +4,21 @@ print("Biphasic sleep is sleeping twice per day instead of once. \nIt allows for
 print("What time do you want to sleep?")
 timeinbed = input()
 hourminute = timeinbed.split(':')
+hourminute = list(map(int, hourminute))
+#This somehow turns all the list items in list hourminute into integers.
 
+bedtime = []
 
 print(hourminute)
-def sleepcalc(bedtime):
-    for a in bedtime:
-        bedtime[a] = int(bedtime[a]) + 6
+def sleepcalc(hourminute):
+    #This is where it dies.
+    for a in hourminute:
+        hourminute[a] += 6
+#I still think the comments underneath should work.
+#I don't know why they don't.
+#    for a in hourminute:
+#        hourminute[a] = int(hourminute[a]) + 6
 #    bedtime[0] += 6
-    print(bedtime)
+    print(hourminute)
 
 sleepcalc(hourminute)
