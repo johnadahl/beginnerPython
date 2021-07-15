@@ -10,9 +10,15 @@ for word in wordsOfCopyPasta:
 
 tmp = {}
 
-for (k,v) in counts:
-    
+#print(counts)
+#This proves that the program works until line 13 perfectly how I want it to.
 
+#This takes all the items in counts and rearanges them so the number is first. That way it can be sorted.
+for (k,v) in counts.items():
+    tmp[v] = k
+
+print(tmp)
+#Now I just need to make it get sorted and then pring only the first x number of words.
 
 
 
