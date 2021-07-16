@@ -18,6 +18,11 @@ for (k,v) in counts.items():
     tmp[v] = k
 
 print(tmp)
+#This shows that the program works perfectly to the line above.
+tmp = sorted(tmp, reversed = True)
+
+print(tmp)
+#I don't know why this doesn't print both the value and the key. It is only printing the key which is an integer. Super annoying.
 #Now I just need to make it get sorted and then pring only the first x number of words.
 
 
