@@ -13,7 +13,9 @@ tmp = {}
 #print(counts)
 #This proves that the program works until line 13 perfectly how I want it to.
 
+
 #This takes all the items in counts and rearanges them so the number is first. That way it can be sorted.
+#So I know that the counts dictionary is filled correctly.
 for (k,v) in counts.items():
     tmp[v] = k
 
@@ -21,7 +23,7 @@ print(tmp)
 #This shows that the program works perfectly to the line above.
 #tmp = sorted(tmp, reverse = True)
 #So this turns tmp into a list instead of a dictionary like I wanted it to be. That is why it only printed out some of the data, that data being the key.
-tmp = tmp.sort()
+#tmp = tmp.sort()
 
 
 print(tmp)
